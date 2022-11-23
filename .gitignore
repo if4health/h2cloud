@@ -1,0 +1,11 @@
+node_modules/
+venv/
+.idea/
+conectados/
+package-lock.json
+.git
+.env
+cantAcces.txt
+python_src/testes.py
+python_src/Files
+__pycache__
