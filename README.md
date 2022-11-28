@@ -19,18 +19,23 @@ A autenticação com [*SMART on FHIR*](https://hl7.org/fhir/smart-app-launch/) e
 ```sh
 git clone https://github.com/if4health/h2cloud .
 ```
-2. Configure variaveis de ambiente, alem de `SERVER_PORT` e `DB_*`, eh importante notar:
+2. Configure variáveis de ambiente:
 
-- `OAUTH_SECRET` - Chave simétrica usada com os dispositivos IoT
-- `OAUTH_PUB` - Chave pública para token de usuários
-- `OAUTH_PRIVATE` - Chave privada para assinar tokens de usuários
-- `DEFAULT_URL` - ???
-
-Configure apenas se utilizar AWS Version
-- `AWS_BUCKET_NAME` - Variável do ambiente S3
-- `AWS_BUCKET_REGION` - Variável do ambiente S3
-- `AWS_ACCESS_KEY` - Variável do ambiente S3
-- `AWS_SECRET_KEY` - Variável do ambiente S3
+| Rota | Descrição |
+|------|-----------|
+| `SERVER_PORT` | Porta do servidor |
+| `DB_HOST` | Host do mongo |
+| `DB_NAME` | Database do mongo |
+| `DB_USER` | Usuário do mongo |
+| `DB_PASS` | Senha do mongo |
+| `OAUTH_SECRET` | Chave simétrica usada com os dispositivos IoT |
+| `OAUTH_PUB` | Chave pública para token de usuários |
+| `OAUTH_PRIVATE` | Chave privada para assinar tokens de usuários |
+| `DEFAULT_URL` | Referencia da URL atual do servidor |
+| `AWS_BUCKET_NAME` | Nome do bucket do S3 que está localizado as chaves |
+| `AWS_BUCKET_REGION` | Região do bucket |
+| `AWS_ACCESS_KEY` | Chave de acesso |
+| `AWS_SECRET_KEY` | Segredo único do S3, precisa ser criado um novo ao registrar no env, não fica acessível na AWS |
 
 
 3. Instale as dependencias de NodeJS para este projeto 
