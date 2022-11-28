@@ -31,6 +31,5 @@
   "scripts": {
     "dev": "nodemon Node_src/server.js",
     "start": "node Node_src/server.js",
-    "seed": "python3 python_src/dbSeeder.py"
   }
 }
