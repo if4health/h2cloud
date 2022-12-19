@@ -15,7 +15,7 @@ mongoDB.mongodb.once('open', (_) => {
   console.log('Mongo Conectado');
 });
 
-app.use(
+/* app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
@@ -24,6 +24,8 @@ app.use(
     },
   })
 );
+Usar isso apenas com HTTPS */
+
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../img')));
 app.set('view engine', 'ejs');

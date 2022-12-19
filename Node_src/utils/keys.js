@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { exportJWK } = require('jose');
 const jwt = require('jsonwebtoken');
-const S3Service = require('../service/S3Service');
+const S3Service = require('../Service/S3Service');
 
 const getPublicKey = async function () {
   return await S3Service.downloadFromS3(process.env.OAUTH_PUB);

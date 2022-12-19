@@ -1,5 +1,5 @@
-const AuthService = require('../service/auth');
-const PatientService = require('../service/Patient');
+const AuthService = require('../Service/Auth');
+const PatientService = require('../Service/Patient');
 const { queryObj } = require('../utils/request');
 
 class AuthController {

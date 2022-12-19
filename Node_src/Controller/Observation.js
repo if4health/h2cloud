@@ -1,4 +1,4 @@
-const ObservationService = require('../service/Observation');
+const ObservationService = require('../Service/Observation');
 
 class ObservationController {
   async createObeservation(req, res) {

@@ -1,8 +1,8 @@
 const crypto = require('crypto');
 const mongoose = require('mongoose');
 const AuthDatabase = require('../model/Auth')();
-const PacienteService = require('./pacientes');
-const MedicoService = require('./medicos');
+const PacienteService = require('./Pacientes');
+const MedicoService = require('./Medicos');
 const PatientService = require('./Patient');
 const {
   signPayload,
