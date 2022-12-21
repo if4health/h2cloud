@@ -73,7 +73,7 @@ http://localhost:${SERVER_PORT}/
 
 
 ## Deploy na AWS
-[Este vídeo](https://www.youtube.com/watch?v=Mb1zueb-s5k) demonstra como fazer Deploy de H2Cloud na AWS.
+#### [Este vídeo](https://www.youtube.com/watch?v=Mb1zueb-s5k) demonstra como fazer Deploy de H2Cloud na AWS.
 
 1. No serviço AWS IAM, na aba Usuários, clique no botão *adicionar um usuário*:
 	- **Passo 1**: Escolha um nome de usuário e selecione como *tipo de credencial* a opção *Chave de acesso: acesso programático*.
@@ -98,6 +98,6 @@ openssl rsa -in ./private.pem -outform PEM -pubout -out public.pem
 
 7. No serviço AWS Elastic Beanstalk, clique no botão *Criar aplicativo*. Escolha a Plataforma NodeJS e selecione a opção de *Fazer upload de código*. Envie o seu arquivo ZIP recém criado.
 
-8. Após o deploy de sua aplicação, você terá uma URL para acessar sua aplicação. Essa URL é necessária para a variável de ambiente `DEFAULT_URL`. Clique em 'Configurações' e clique no botão `Editar` em `Software`. Em `Propriedades do ambiente`, configure `DEFAULT_URL` com a URL gerada pelo AWS Elastic Beanstalk.
+8. Após o deploy de sua aplicação, você terá uma URL para acessar sua aplicação. Essa URL é necessária para a variável de ambiente `DEFAULT_URL`. Clique em *Configurações* e clique no botão *Editar* da caixa *Software*. Em *Propriedades do ambiente*, configure `DEFAULT_URL` com a URL gerada pelo AWS Elastic Beanstalk.
 
 9. Sua aplicação vai reiniciar e estará pronta para o uso. Ufa!!
